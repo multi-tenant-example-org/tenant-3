@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
+    namespace: tenant-3
     server: https://kubernetes.default.svc
   project: tenant-3
   source:
