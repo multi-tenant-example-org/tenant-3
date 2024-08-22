@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: sample-app
-  name: sample-app
+    app: t3-sample-app
+  name: t3-sample-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample-app
+      app: t3-sample-app
   template:
     metadata:
       labels:
-        app: sample-app
+        app: t3-sample-app
     spec:
       containers:
-      - name: sample-app
+      - name: t3-sample-app
         securityContext:
           runAsUser: 1000
           runAsNonRoot: true
