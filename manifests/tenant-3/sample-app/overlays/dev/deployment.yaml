@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-      - name: nginx
+      - name: t3-sample-app
         image: asia-northeast1-docker.pkg.dev/sreake-intern/intern-repo-murasame29/sample-app
         resources:
           requests:
